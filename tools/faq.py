@@ -21,7 +21,7 @@ FAQ = [
   ("When was 863 Manning Ave built and what condition is it in?",
    "Public records show it was built in 1949. The July 2026 appraisal described the kitchen and baths as updated and reported no major repair needs based on a visual observation only; the appraiser noted it was not a home inspection. Buyers are encouraged to obtain their own professional inspections."),
   ("Who is the listing agent for 863 Manning Ave?",
-   f"{AGENT}. Call or text {PHONE}, or email sam@alishahiinsurance.com."),
+   f"{AGENT}. Call or text {PHONE}, or email samkw310@gmail.com."),
  ]),
  ("Lease option & rent-to-own", [
   ("Is 863 Manning Ave available as a rent-to-own or lease option home?",
