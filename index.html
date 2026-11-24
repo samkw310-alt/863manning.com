@@ -167,22 +167,24 @@ h2{font-size:1.35rem;font-weight:700;margin-bottom:16px}
 /* layout */
 .layout{display:grid;grid-template-columns:minmax(0,1fr) 360px;gap:40px;margin:24px auto 64px}
 @media (max-width:960px){.layout{grid-template-columns:1fr}}
-.section{padding:28px 0;border-bottom:1px solid var(--line)}
+.section{padding:24px 0;border-bottom:1px solid var(--line)}
 .section:last-child{border-bottom:0}
 
 /* summary */
 .status{display:inline-flex;align-items:center;gap:6px;font-size:.85rem;font-weight:600;color:var(--ink)}
 .status::before{content:"";width:9px;height:9px;border-radius:50%;background:#d93b3b}
-.price{font-size:2.2rem;font-weight:700;margin:6px 0 2px;letter-spacing:-.01em}
-.stats{display:flex;flex-wrap:wrap;gap:4px 22px;font-size:1.05rem;margin:4px 0 10px}
+.price{font-size:2.4rem;font-weight:700;margin:8px 0 0;letter-spacing:-.02em;display:inline-block;margin-right:20px}
+.stats{display:inline-flex;flex-wrap:wrap;gap:4px 18px;font-size:1.05rem;margin:4px 0 6px;vertical-align:6px}
+.stats span{padding-right:18px;border-right:1px solid var(--line)}.stats span:last-child{border:0}
 .stats b{font-weight:700}
 .stats span{color:var(--muted)}
+.stats b{font-size:1.4rem;color:var(--ink);margin-right:2px}
 .addr{font-size:1.05rem;color:var(--ink)}
 .chips{display:flex;flex-wrap:wrap;gap:8px;margin-top:16px}
 .chip{background:var(--chip);color:var(--brand-dark);border-radius:999px;padding:6px 12px;font-size:.82rem;font-weight:600}
 .chip.green{background:#e7f6ef;color:var(--ok)}
 .keyfacts{display:grid;grid-template-columns:repeat(3,1fr);gap:12px;margin-top:20px}
-.keyfacts div{background:var(--soft);border-radius:10px;padding:12px 14px;font-size:.88rem;color:var(--muted)}
+.keyfacts div{border:1px solid var(--line);border-radius:8px;padding:10px 12px;font-size:.82rem;color:var(--muted)}
 .keyfacts b{display:block;color:var(--ink);font-size:.95rem}
 @media (max-width:600px){.keyfacts{grid-template-columns:1fr 1fr}}
 .overview p{margin:0 0 12px;color:var(--ink)}
@@ -258,7 +260,7 @@ footer p{margin:0 0 6px}
 
 <header class="bar">
   <div class="wrap">
-    <a class="logo" href="#top"><i>863</i>863 Manning Ave</a>
+    <a class="logo" href="#top">863 Manning Ave</a>
     <nav>
       <a href="#overview">Overview</a>
       <a href="#financing">Financing</a>
@@ -285,14 +287,11 @@ footer p{margin:0 0 6px}
       <section class="section" style="padding-top:8px">
         <div class="status">For sale · Vacant, available now</div>
         <div class="price">$4,600,000</div>
-        <div class="stats"><span><b>4</b> bd</span><span><b>2.5</b> ba</span><span><b>2,849</b> sqft</span><span><b>9,744</b> sqft lot</span></div>
+        <div class="stats"><span><b>4</b> beds</span><span><b>2.5</b> baths</span><span><b>2,849</b> sqft</span></div>
         <h1 class="addr">863 Manning Ave, Los Angeles, CA 90024</h1>
         <div class="chips">
           <span class="chip green">Lease option to buy</span>
           <span class="chip green">Seller may carry</span>
-          <span class="chip">Owner financing</span>
-          <span class="chip">Rent-to-own</span>
-          <span class="chip">Creative financing considered</span>
         </div>
         <div class="keyfacts">
           <div><b>Single family</b>Property type</div>
@@ -300,7 +299,7 @@ footer p{margin:0 0 6px}
           <div><b>Guest house</b>Detached</div>
           <div><b>Central air</b>Forced-air heat</div>
           <div><b>Carport + driveway</b>Parking</div>
-          <div><b>No HOA</b>Zoned R1</div>
+          <div><b>9,744 sqft</b>Lot</div>
         </div>
       </section>
 
