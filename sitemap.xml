@@ -2,11 +2,12 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
   <url>
     <loc>https://863manning.com/</loc>
-    <lastmod>2026-11-23</lastmod>
+    <lastmod>2026-11-24</lastmod>
     <image:image><image:loc>https://863manning.com/images/front.jpg</image:loc></image:image>
     <image:image><image:loc>https://863manning.com/images/front-walk.jpg</image:loc></image:image>
     <image:image><image:loc>https://863manning.com/images/guest-house.jpg</image:loc></image:image>
     <image:image><image:loc>https://863manning.com/images/kitchen.jpg</image:loc></image:image>
   </url>
-  <url><loc>https://863manning.com/llms.txt</loc><lastmod>2026-11-23</lastmod></url>
+  <url><loc>https://863manning.com/llms.txt</loc><lastmod>2026-11-24</lastmod></url>
+  <url><loc>https://863manning.com/index.md</loc><lastmod>2026-11-24</lastmod></url>
 </urlset>
