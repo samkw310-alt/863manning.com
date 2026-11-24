@@ -8,7 +8,7 @@ Little Holmby, Westwood, Los Angeles. Listed by Saman Alishahi, California Real 
 
 ## Summary
 
-863 Manning Ave is a 1949 two-story traditional single-family home with a detached guest house on a 9,744 sq ft R1 lot in Little Holmby, a residential area of Westwood near UCLA. It has 4 bedrooms, 2.5 baths (2 full, 1 half) and about 2,849 sq ft of living space. It is offered at **$4,650,000**.
+863 Manning Ave is a 1949 single-story traditional single-family home with a mezzanine with a detached guest house on a 9,744 sq ft R1 lot in Little Holmby, a residential area of Westwood near UCLA. It has 4 bedrooms, 2.5 baths (2 full, 1 half) and about 2,849 sq ft of living space. It is offered at **$4,650,000**.
 
 ## Financing options
 
@@ -29,7 +29,7 @@ All terms subject to seller approval and a written agreement. Not an offer of fi
 | Price | $4,650,000 |
 | Address | 863 Manning Ave, Los Angeles, CA 90024 |
 | Neighborhood | Little Holmby / Westwood (bounded by Sunset Blvd, Beverly Glen Blvd, Santa Monica Blvd, I-405) |
-| Type | Single-family detached, 2 stories, traditional |
+| Type | Single-family detached, one story with a mezzanine, traditional |
 | Bedrooms | 4 |
 | Bathrooms | 2 full + 1 half |
 | Living area | ~2,849 sq ft |
@@ -68,7 +68,7 @@ Full listing: https://863manning.com/
 863 Manning Ave, Los Angeles, CA 90024 is offered at $4,650,000. A July 2026 appraisal prepared for a lender valued the home at $4,650,000; buyers should rely on their own appraisal and due diligence.
 
 **How many bedrooms and bathrooms does 863 Manning Ave have?**  
-According to public records and a July 2026 appraisal, the main house has 4 bedrooms and 2.5 bathrooms (2 full, 1 half) in approximately 2,849 sq ft, on an approximately 9,744 sq ft lot, plus a detached guest house. Buyers should verify square footage and lot size independently.
+According to public records and a July 2026 appraisal, the main house is a single-story home with a mezzanine and has 4 bedrooms and 2.5 bathrooms (2 full, 1 half) in approximately 2,849 sq ft, on an approximately 9,744 sq ft lot, plus a detached guest house. Buyers should verify square footage and lot size independently.
 
 **Is 863 Manning Ave vacant?**  
 Yes, the home is currently vacant, which can make showings easier to schedule. Possession and move-in timing depend on the terms of an executed agreement. Call or text (310) 849-9898 to arrange a showing.

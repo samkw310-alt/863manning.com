@@ -13,7 +13,7 @@ FAQ = [
   ("What is the price of 863 Manning Ave in Los Angeles?",
    "863 Manning Ave, Los Angeles, CA 90024 is offered at $4,650,000. A July 2026 appraisal prepared for a lender valued the home at $4,650,000; buyers should rely on their own appraisal and due diligence."),
   ("How many bedrooms and bathrooms does 863 Manning Ave have?",
-   "According to public records and a July 2026 appraisal, the main house has 4 bedrooms and 2.5 bathrooms (2 full, 1 half) in approximately 2,849 sq ft, on an approximately 9,744 sq ft lot, plus a detached guest house. Buyers should verify square footage and lot size independently."),
+   "According to public records and a July 2026 appraisal, the main house is a single-story home with a mezzanine and has 4 bedrooms and 2.5 bathrooms (2 full, 1 half) in approximately 2,849 sq ft, on an approximately 9,744 sq ft lot, plus a detached guest house. Buyers should verify square footage and lot size independently."),
   ("Is 863 Manning Ave vacant?",
    f"Yes, the home is currently vacant, which can make showings easier to schedule. Possession and move-in timing depend on the terms of an executed agreement. Call or text {PHONE} to arrange a showing."),
   ("Does 863 Manning Ave have a guest house?",
