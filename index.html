@@ -21,9 +21,6 @@
 <meta property="og:image" content="https://863manning.com/images/front.jpg">
 <meta name="twitter:card" content="summary_large_image">
 
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,600&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
 
 <script type="application/ld+json">
 {
@@ -122,278 +119,316 @@
   ]
 }
 </script>
-
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
 <style>
 :root{
-  --bg:#f7f4ee; --surface:#ffffff; --ink:#1d1c1a; --muted:#625e57; --line:#e3ddd2;
-  --accent:#2f4a3a; --accent-ink:#ffffff; --gold:#a8834a;
-}
-@media (prefers-color-scheme: dark){
-  :root{ --bg:#141412; --surface:#1d1d1a; --ink:#f1ede6; --muted:#aaa49a; --line:#2f2e2a;
-         --accent:#7fa58c; --accent-ink:#0f1511; --gold:#d2ad6f; }
+  --bg:#ffffff; --soft:#f6f7f9; --ink:#2a2a33; --muted:#596b82; --line:#e3e7ec;
+  --brand:#0b62d6; --brand-dark:#084ea9; --ok:#0a7d4d; --chip:#eef4fd;
 }
 *{box-sizing:border-box}
 html{scroll-behavior:smooth}
-body{margin:0;background:var(--bg);color:var(--ink);font:16px/1.6 Inter,system-ui,sans-serif}
-img{max-width:100%;display:block}
-a{color:inherit}
-.wrap{max-width:1120px;margin:0 auto;padding:0 16px}
-h1,h2,h3{font-family:Fraunces,Georgia,serif;font-weight:600;line-height:1.15;margin:0}
-h2{font-size:clamp(1.6rem,3vw,2.2rem);margin-bottom:.6em}
-.eyebrow{text-transform:uppercase;letter-spacing:.14em;font-size:.75rem;color:var(--gold);font-weight:600}
+body{margin:0;background:var(--bg);color:var(--ink);font:16px/1.55 Inter,system-ui,-apple-system,sans-serif;-webkit-font-smoothing:antialiased}
+img{display:block;max-width:100%}
+a{color:var(--brand)}
+.wrap{max-width:1200px;margin:0 auto;padding:0 16px}
+h1,h2,h3{margin:0;line-height:1.2}
+h2{font-size:1.35rem;font-weight:700;margin-bottom:16px}
 
-/* header */
-header.top{position:sticky;top:0;z-index:5;background:color-mix(in srgb,var(--bg) 88%,transparent);backdrop-filter:blur(8px);border-bottom:1px solid var(--line)}
-header.top .wrap{display:flex;align-items:center;justify-content:space-between;height:60px}
-header.top strong{font-family:Fraunces,serif;font-size:1.1rem}
-header.top nav a{margin-left:20px;text-decoration:none;font-size:.9rem;color:var(--muted)}
-header.top nav a:hover{color:var(--ink)}
-@media (max-width:700px){header.top nav a:not(.cta-link){display:none}}
-.cta-link{color:var(--accent)!important;font-weight:600}
+/* top bar */
+.bar{border-bottom:1px solid var(--line);background:#fff;position:sticky;top:0;z-index:20}
+.bar .wrap{height:60px;display:flex;align-items:center;justify-content:space-between;gap:16px}
+.logo{font-weight:700;font-size:1.05rem;color:var(--ink);text-decoration:none;display:flex;align-items:center;gap:8px}
+.logo i{width:28px;height:28px;border-radius:7px;background:var(--brand);display:inline-grid;place-items:center;color:#fff;font-style:normal;font-size:.8rem}
+.bar nav{display:flex;gap:22px;font-size:.9rem}
+.bar nav a{color:var(--ink);text-decoration:none;font-weight:500}
+.bar nav a:hover{color:var(--brand)}
+.bar .call{background:var(--brand);color:#fff;padding:8px 14px;border-radius:8px}
+.bar .call:hover{background:var(--brand-dark);color:#fff}
+@media (max-width:760px){.bar nav a:not(.call){display:none}}
+@media (max-width:600px){.bar .call{display:none}}
+.logo{white-space:nowrap}
 
-/* hero */
-.hero{position:relative;min-height:78vh;display:flex;align-items:flex-end;color:#fff;
-  background:#333 url(images/front.jpg) center/cover no-repeat}
-.hero::before{content:"";position:absolute;inset:0;background:linear-gradient(180deg,rgba(0,0,0,.1) 20%,rgba(0,0,0,.78) 75%),linear-gradient(90deg,rgba(0,0,0,.35),transparent 60%)}
-.hero .wrap{position:relative;padding-bottom:48px;padding-top:120px;width:100%}
-.hero h1{font-size:clamp(2.2rem,6vw,4.2rem)}
-.hero p.sub{font-size:1.1rem;margin:.4em 0 1.2em;opacity:.92}
-.price{font-family:Fraunces,serif;font-size:clamp(1.8rem,4vw,2.6rem)}
-.tags{display:flex;flex-wrap:wrap;gap:8px;margin-top:16px}
-.tag{border:1px solid rgba(255,255,255,.55);border-radius:999px;padding:6px 14px;font-size:.85rem;background:rgba(0,0,0,.25)}
+/* photo mosaic */
+.mosaic{display:grid;grid-template-columns:2fr 1fr 1fr;grid-template-rows:220px 220px;gap:6px;margin-top:16px;border-radius:12px;overflow:hidden;position:relative}
+.mosaic button{all:unset;cursor:pointer;position:relative;overflow:hidden;background:var(--soft)}
+.mosaic button:first-child{grid-row:span 2}
+.mosaic img{width:100%;height:100%;object-fit:cover;transition:transform .35s}
+.mosaic button:hover img{transform:scale(1.03)}
+.mosaic button:focus-visible{outline:3px solid var(--brand);outline-offset:-3px}
+.mosaic .allphotos{position:absolute;right:14px;bottom:14px;background:#fff;color:var(--ink);border:1px solid var(--line);border-radius:8px;padding:8px 14px;font:600 .85rem Inter,sans-serif;cursor:pointer;box-shadow:0 2px 8px rgba(0,0,0,.12)}
+@media (max-width:760px){
+  .mosaic{grid-template-columns:1fr 1fr;grid-template-rows:240px 120px}
+  .mosaic button:first-child{grid-column:span 2;grid-row:auto}
+  .mosaic button:nth-child(n+4):not(.allphotos){display:none}
+}
 
-/* facts */
-.facts{display:grid;grid-template-columns:repeat(6,1fr);background:var(--surface);border:1px solid var(--line);border-radius:14px;margin-top:-36px;position:relative;z-index:2}
-.facts div{padding:18px 12px;text-align:center;border-right:1px solid var(--line)}
-.facts div:last-child{border-right:0}
-.facts b{display:block;font-family:Fraunces,serif;font-size:1.5rem}
-.facts span{font-size:.8rem;color:var(--muted);text-transform:uppercase;letter-spacing:.08em}
-@media (max-width:800px){.facts{grid-template-columns:repeat(3,1fr)}.facts div:nth-child(3){border-right:0}.facts div:nth-child(-n+3){border-bottom:1px solid var(--line)}}
+/* layout */
+.layout{display:grid;grid-template-columns:minmax(0,1fr) 360px;gap:40px;margin:24px auto 64px}
+@media (max-width:960px){.layout{grid-template-columns:1fr}}
+.section{padding:28px 0;border-bottom:1px solid var(--line)}
+.section:last-child{border-bottom:0}
 
-section{padding:72px 0}
-.lead{font-size:1.15rem;color:var(--muted);max-width:760px}
+/* summary */
+.status{display:inline-flex;align-items:center;gap:6px;font-size:.85rem;font-weight:600;color:var(--ink)}
+.status::before{content:"";width:9px;height:9px;border-radius:50%;background:#d93b3b}
+.price{font-size:2.2rem;font-weight:700;margin:6px 0 2px;letter-spacing:-.01em}
+.stats{display:flex;flex-wrap:wrap;gap:4px 22px;font-size:1.05rem;margin:4px 0 10px}
+.stats b{font-weight:700}
+.stats span{color:var(--muted)}
+.addr{font-size:1.05rem;color:var(--ink)}
+.chips{display:flex;flex-wrap:wrap;gap:8px;margin-top:16px}
+.chip{background:var(--chip);color:var(--brand-dark);border-radius:999px;padding:6px 12px;font-size:.82rem;font-weight:600}
+.chip.green{background:#e7f6ef;color:var(--ok)}
+.keyfacts{display:grid;grid-template-columns:repeat(3,1fr);gap:12px;margin-top:20px}
+.keyfacts div{background:var(--soft);border-radius:10px;padding:12px 14px;font-size:.88rem;color:var(--muted)}
+.keyfacts b{display:block;color:var(--ink);font-size:.95rem}
+@media (max-width:600px){.keyfacts{grid-template-columns:1fr 1fr}}
+.overview p{margin:0 0 12px;color:var(--ink)}
 
 /* financing */
-.fin{background:var(--accent);color:var(--accent-ink)}
-.fin .eyebrow{color:inherit;opacity:.8}
-.fin .grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:16px;margin-top:28px}
-.fin .card{border:1px solid color-mix(in srgb,var(--accent-ink) 30%,transparent);border-radius:12px;padding:22px}
-.fin .card h3{font-size:1.25rem;margin-bottom:.4em}
-.fin .card p{margin:0;opacity:.9}
-.fin .note{margin-top:24px;font-size:.9rem;opacity:.85}
+.fin{display:grid;grid-template-columns:1fr 1fr;gap:12px}
+@media (max-width:600px){.fin{grid-template-columns:1fr}}
+.fin div{border:1px solid var(--line);border-radius:10px;padding:16px}
+.fin h3{font-size:1rem;margin-bottom:4px}
+.fin p{margin:0;color:var(--muted);font-size:.92rem}
+.fine{font-size:.8rem;color:var(--muted);margin-top:12px}
 
-/* gallery */
-.gallery{display:grid;grid-template-columns:repeat(4,1fr);gap:10px}
-.gallery figure{margin:0;position:relative;overflow:hidden;border-radius:10px;cursor:zoom-in;aspect-ratio:4/3;background:var(--line)}
-.gallery figure.big{grid-column:span 2;grid-row:span 2}
-.gallery img{width:100%;height:100%;object-fit:cover;transition:transform .4s}
-.gallery figure:hover img{transform:scale(1.04)}
-.gallery figcaption{position:absolute;left:10px;bottom:8px;color:#fff;font-size:.8rem;text-shadow:0 1px 3px rgba(0,0,0,.7)}
-@media (max-width:700px){.gallery{grid-template-columns:repeat(2,1fr)}}
-.lightbox{position:fixed;inset:0;background:rgba(0,0,0,.9);display:none;align-items:center;justify-content:center;z-index:20;padding:16px}
-.lightbox.open{display:flex}
-.lightbox img{max-height:90vh;border-radius:8px}
+/* facts table */
+.facts{display:grid;grid-template-columns:1fr 1fr;gap:0 32px}
+@media (max-width:600px){.facts{grid-template-columns:1fr}}
+.facts h3{font-size:.95rem;margin:14px 0 6px}
+.facts ul{margin:0;padding-left:18px;color:var(--ink);font-size:.93rem}
+.facts li{margin:3px 0}
 
-/* features */
-.two{display:grid;grid-template-columns:1fr 1fr;gap:48px}
-@media (max-width:800px){.two{grid-template-columns:1fr;gap:24px}}
-ul.check{list-style:none;padding:0;margin:0}
-ul.check li{padding:10px 0;border-bottom:1px solid var(--line)}
-ul.check li::before{content:"✓";color:var(--gold);font-weight:700;margin-right:10px}
-table.spec{width:100%;border-collapse:collapse}
-table.spec td{padding:10px 0;border-bottom:1px solid var(--line)}
-table.spec td:last-child{text-align:right;font-weight:500}
+/* map */
+.map{border-radius:12px;overflow:hidden;border:1px solid var(--line);height:360px;background:var(--soft)}
+.map iframe{width:100%;height:100%;border:0}
+.near{display:flex;flex-wrap:wrap;gap:8px 20px;margin-top:12px;font-size:.9rem;color:var(--muted)}
 
 /* faq */
-details{border-bottom:1px solid var(--line);padding:16px 0}
-summary{cursor:pointer;font-weight:600;font-size:1.05rem}
-details p{color:var(--muted);margin:.6em 0 0}
+details{border-bottom:1px solid var(--line);padding:14px 0}
+details:last-child{border-bottom:0}
+summary{cursor:pointer;font-weight:600;list-style:none;display:flex;justify-content:space-between;gap:12px}
+summary::after{content:"+";color:var(--muted);font-weight:400;font-size:1.2rem;line-height:1}
+details[open] summary::after{content:"–"}
+details p{margin:8px 0 0;color:var(--muted)}
 
-/* contact */
-.contact{background:var(--surface);border-top:1px solid var(--line)}
-form{display:grid;gap:12px;max-width:560px}
-input,textarea,select{font:inherit;padding:12px 14px;border:1px solid var(--line);border-radius:8px;background:var(--bg);color:var(--ink);width:100%}
-button{font:inherit;font-weight:600;background:var(--accent);color:var(--accent-ink);border:0;border-radius:8px;padding:14px 20px;cursor:pointer}
-footer{padding:32px 0;font-size:.8rem;color:var(--muted)}
+/* sidebar form */
+aside{position:relative}
+.card{position:sticky;top:80px;border:1px solid var(--line);border-radius:12px;padding:20px;box-shadow:0 4px 18px rgba(20,30,50,.07);background:#fff}
+.card h3{font-size:1.1rem;margin-bottom:4px}
+.card .sub{color:var(--muted);font-size:.88rem;margin:0 0 14px}
+.card form{display:grid;gap:10px}
+.card label{font-size:.8rem;font-weight:600;color:var(--ink)}
+.card input,.card select,.card textarea{width:100%;font:inherit;font-size:.95rem;padding:10px 12px;border:1px solid #c9d1db;border-radius:8px;background:#fff;color:var(--ink)}
+.card input:focus,.card select:focus,.card textarea:focus{outline:2px solid var(--brand);border-color:var(--brand)}
+.card textarea{resize:vertical;min-height:84px}
+.btn{display:block;width:100%;text-align:center;background:var(--brand);color:#fff;border:0;border-radius:8px;padding:12px;font:600 1rem Inter,sans-serif;cursor:pointer;text-decoration:none}
+.btn:hover{background:var(--brand-dark)}
+.btn.ghost{background:#fff;color:var(--brand);border:1px solid var(--brand);margin-top:8px}
+.btn.ghost:hover{background:var(--chip)}
+.agent{display:flex;gap:12px;align-items:center;border-top:1px solid var(--line);margin-top:16px;padding-top:16px;font-size:.88rem}
+.agent .av{width:44px;height:44px;border-radius:50%;background:var(--chip);color:var(--brand-dark);display:grid;place-items:center;font-weight:700;flex:none}
+.agent b{display:block;font-size:.95rem}
+.agent span{color:var(--muted)}
+.consent{font-size:.72rem;color:var(--muted);margin:0}
+.hp{position:absolute;left:-9999px}
+
+/* lightbox */
+.lb{position:fixed;inset:0;background:rgba(10,12,16,.94);display:none;z-index:50;align-items:center;justify-content:center;padding:56px 16px}
+.lb.open{display:flex}
+.lb img{max-height:100%;max-width:100%;border-radius:6px}
+.lb button{position:absolute;background:rgba(255,255,255,.12);color:#fff;border:0;border-radius:50%;width:44px;height:44px;font-size:1.4rem;cursor:pointer}
+.lb .x{top:12px;right:12px}.lb .prev{left:12px;top:50%}.lb .next{right:12px;top:50%}
+.lb .cap{position:absolute;bottom:14px;left:0;right:0;text-align:center;color:#dfe3ea;font-size:.9rem}
+
+footer{background:var(--soft);border-top:1px solid var(--line);padding:28px 0;font-size:.8rem;color:var(--muted)}
+footer p{margin:0 0 6px}
+.fab{position:fixed;right:16px;bottom:16px;display:flex;gap:10px;z-index:40}
+.fab a{display:flex;align-items:center;gap:8px;padding:13px 18px;border-radius:999px;font-weight:600;font-size:.95rem;text-decoration:none;color:#fff;box-shadow:0 6px 20px rgba(10,30,60,.25)}
+.fab .c{background:var(--brand)}.fab .t{background:var(--ok)}
+.fab a:hover{filter:brightness(.92)}
+.fab svg{width:18px;height:18px;fill:currentColor}
+@media (max-width:600px){.fab{left:0;right:0;bottom:0;gap:0;background:#fff;border-top:1px solid var(--line);padding:10px 12px calc(10px + env(safe-area-inset-bottom));gap:10px}.fab a{flex:1;justify-content:center;box-shadow:none;border-radius:10px}body{padding-bottom:72px}}
 </style>
 </head>
 <body>
 
-<header class="top">
+<header class="bar">
   <div class="wrap">
-    <strong>863 Manning</strong>
+    <a class="logo" href="#top"><i>863</i>863 Manning Ave</a>
     <nav>
+      <a href="#overview">Overview</a>
       <a href="#financing">Financing</a>
-      <a href="#photos">Photos</a>
-      <a href="#details">Details</a>
+      <a href="#facts">Facts</a>
+      <a href="#location">Map</a>
       <a href="#faq">FAQ</a>
-      <a href="#contact" class="cta-link">Inquire</a>
+      <a class="call" href="tel:+13108499898">Call (310) 849-9898</a>
     </nav>
   </div>
 </header>
 
-<section class="hero" aria-label="863 Manning Ave front exterior">
-  <div class="wrap">
-    <div class="eyebrow" style="color:#e9d3a8">Little Holmby · Westwood · Los Angeles 90024</div>
-    <h1>863 Manning Avenue</h1>
-    <p class="sub">A 1949 traditional with a guest house on a 9,744 sq ft lot, minutes from UCLA and Beverly Hills.</p>
-    <div class="price">$4,600,000</div>
-    <div class="tags">
-      <span class="tag">Vacant · available now</span>
-      <span class="tag">Lease option to buy</span>
-      <span class="tag">Seller may carry</span>
-      <span class="tag">Owner financing</span>
-      <span class="tag">Creative financing considered</span>
-    </div>
+<main class="wrap" id="top">
+  <div class="mosaic" aria-label="Photos of 863 Manning Ave">
+    <button data-i="0"><img src="images/front.jpg" alt="Front exterior of 863 Manning Ave with landscaped lawn"></button>
+    <button data-i="2"><img src="images/living.jpg" alt="Living room with fireplace"></button>
+    <button data-i="3"><img src="images/kitchen.jpg" alt="Updated kitchen"></button>
+    <button data-i="6"><img src="images/guest-house.jpg" alt="Detached guest house"></button>
+    <button data-i="5"><img src="images/rear-patio.jpg" alt="Rear patio"></button>
+    <button class="allphotos" type="button" data-i="0">See all 10 photos</button>
   </div>
-</section>
 
-<div class="wrap">
-  <div class="facts" role="list">
-    <div role="listitem"><b>4</b><span>Bedrooms</span></div>
-    <div role="listitem"><b>2.5</b><span>Baths</span></div>
-    <div role="listitem"><b>2,849</b><span>Sq ft</span></div>
-    <div role="listitem"><b>9,744</b><span>Lot sq ft</span></div>
-    <div role="listitem"><b>1949</b><span>Built</span></div>
-    <div role="listitem"><b>+ Guest</b><span>House</span></div>
+  <div class="layout">
+    <div>
+      <section class="section" style="padding-top:8px">
+        <div class="status">For sale · Vacant, available now</div>
+        <div class="price">$4,600,000</div>
+        <div class="stats"><span><b>4</b> bd</span><span><b>2.5</b> ba</span><span><b>2,849</b> sqft</span><span><b>9,744</b> sqft lot</span></div>
+        <h1 class="addr">863 Manning Ave, Los Angeles, CA 90024</h1>
+        <div class="chips">
+          <span class="chip green">Lease option to buy</span>
+          <span class="chip green">Seller may carry</span>
+          <span class="chip">Owner financing</span>
+          <span class="chip">Rent-to-own</span>
+          <span class="chip">Creative financing considered</span>
+        </div>
+        <div class="keyfacts">
+          <div><b>Single family</b>Property type</div>
+          <div><b>Built in 1949</b>Traditional, 2 stories</div>
+          <div><b>Guest house</b>Detached</div>
+          <div><b>Central air</b>Forced-air heat</div>
+          <div><b>Carport + driveway</b>Parking</div>
+          <div><b>No HOA</b>Zoned R1</div>
+        </div>
+      </section>
+
+      <section class="section overview" id="overview">
+        <h2>Overview</h2>
+        <p>Set behind manicured hedges and bougainvillea on a quiet, tree-lined street in Little Holmby, 863 Manning Ave is a 1949 two-story traditional with four bedrooms, two full baths and a powder room. It has hardwood floors, two fireplaces, central air, and an updated kitchen and baths. A detached guest house opens onto the lawn through French doors, and there's a private rear patio for outdoor dining.</p>
+        <p>The home is <strong>vacant and available now</strong>. It was independently appraised at <strong>$4,650,000</strong> (July 2026) and is offered at <strong>$4,600,000</strong>. The seller is open to a <strong>lease option</strong>, <strong>seller carryback financing</strong> and other creative terms.</p>
+      </section>
+
+      <section class="section" id="financing">
+        <h2>Financing options</h2>
+        <div class="fin">
+          <div><h3>Lease option to buy</h3><p>Rent-to-own: move in now, lock in the price, buy later. Option fee, rent credits and term negotiable.</p></div>
+          <div><h3>Seller may carry</h3><p>Seller financing / owner financing via a seller carryback note with an acceptable down payment.</p></div>
+          <div><h3>Lease-purchase</h3><p>A committed purchase on a set future date, giving you time to sell, close a loan or arrange funds.</p></div>
+          <div><h3>Hybrid &amp; creative</h3><p>Conventional or jumbo first plus a seller second, 1031 exchange buyers, and other proposals.</p></div>
+        </div>
+        <p class="fine">All terms subject to seller approval and a written agreement. Nothing here is a commitment to lend or an offer of credit.</p>
+      </section>
+
+      <section class="section" id="facts">
+        <h2>Facts &amp; features</h2>
+        <div class="facts">
+          <div>
+            <h3>Interior</h3>
+            <ul><li>Bedrooms: 4</li><li>Bathrooms: 2 full, 1 half</li><li>Total rooms: 8</li><li>Living area: ~2,849 sq ft</li><li>Hardwood floors, plaster walls</li><li>Two fireplaces</li><li>Updated kitchen and baths</li><li>Range/oven, dishwasher, disposal</li></ul>
+            <h3>Systems</h3>
+            <ul><li>Central forced-air gas heat</li><li>Central air conditioning</li><li>Tankless water heater</li><li>Public water, sewer, gas, electric</li></ul>
+          </div>
+          <div>
+            <h3>Property</h3>
+            <ul><li>Lot: ~9,744 sq ft, rectangular</li><li>Zoning: R1 (single-family)</li><li>Detached guest house</li><li>Rear patio, covered porch</li><li>Perimeter fencing, mature landscaping</li><li>Attached carport + 2-car driveway</li></ul>
+            <h3>Other</h3>
+            <ul><li>Year built: 1949</li><li>HOA: none</li><li>FEMA flood zone X</li><li>APN 4360-008-022</li></ul>
+          </div>
+        </div>
+      </section>
+
+      <section class="section" id="location">
+        <h2>Location</h2>
+        <div class="map">
+          <iframe title="Map of 863 Manning Ave, Los Angeles, CA 90024" loading="lazy" referrerpolicy="no-referrer-when-downgrade"
+            src="https://www.google.com/maps?q=863+Manning+Ave,+Los+Angeles,+CA+90024&z=15&output=embed"></iframe>
+        </div>
+        <div class="near"><span>Little Holmby / Westwood</span><span>~1 mi to UCLA</span><span>Westwood Village</span><span>Century City</span><span>Beverly Hills</span><span>Bel Air</span></div>
+        <p class="fine"><a href="https://www.google.com/maps/dir/?api=1&destination=863+Manning+Ave,+Los+Angeles,+CA+90024" target="_blank" rel="noopener">Get directions →</a></p>
+      </section>
+
+      <section class="section" id="faq">
+        <h2>Questions</h2>
+        <details><summary>Is a lease option or rent-to-own available?</summary><p>Yes. The seller will consider a lease option to buy (lease-to-own / rent-to-own) or a lease-purchase. Option fee, monthly rent, rent credits and term are negotiable.</p></details>
+        <details><summary>Will the seller carry financing?</summary><p>The seller may carry. Seller financing / owner financing through a seller carryback note will be considered with an acceptable down payment.</p></details>
+        <details><summary>What other creative financing is considered?</summary><p>A conventional or jumbo first loan with a seller second, 1031 exchange buyers, and other structures proposed by qualified buyers.</p></details>
+        <details><summary>Can I see the home?</summary><p>Yes. The home is vacant and available now, so showings are easy to schedule. Use the form or call (310) 849-9898.</p></details>
+        <details><summary>Does it have a guest house?</summary><p>Yes, a detached guest house with French doors opening onto the lawn, in addition to the 4-bedroom, 2.5-bath main house.</p></details>
+        <details><summary>Where is Little Holmby?</summary><p>A residential pocket of Westwood bounded by Sunset Blvd, Beverly Glen Blvd, Santa Monica Blvd and the 405, about a mile from UCLA.</p></details>
+      </section>
+    </div>
+
+    <aside id="contact">
+      <div class="card">
+        <h3>Request a tour or make an offer</h3>
+        <p class="sub">Vacant and ready to show. Tell us how you'd like to buy.</p>
+        <form action="https://formsubmit.co/sam@alishahiinsurance.com" method="POST">
+          <input type="hidden" name="_subject" value="New inquiry: 863 Manning Ave">
+          <input type="hidden" name="_template" value="table">
+          <input type="hidden" name="_next" value="https://863manning.com/thanks.html">
+          <input type="text" name="_honey" class="hp" tabindex="-1" autocomplete="off" aria-hidden="true">
+          <div><label for="f-name">Name</label><input id="f-name" name="name" required autocomplete="name"></div>
+          <div><label for="f-phone">Phone</label><input id="f-phone" name="phone" type="tel" required autocomplete="tel"></div>
+          <div><label for="f-email">Email</label><input id="f-email" name="email" type="email" required autocomplete="email"></div>
+          <div><label for="f-int">I'm interested in</label>
+            <select id="f-int" name="interest">
+              <option>Scheduling a tour</option>
+              <option>Lease option to buy</option>
+              <option>Seller financing / seller carry</option>
+              <option>Conventional or jumbo purchase</option>
+              <option>Cash purchase</option>
+              <option>Other creative financing</option>
+            </select></div>
+          <div><label for="f-msg">Message</label><textarea id="f-msg" name="message">I'm interested in 863 Manning Ave.</textarea></div>
+          <button class="btn" type="submit">Send request</button>
+          <p class="consent">By submitting, you agree to be contacted about this property by phone, text or email.</p>
+        </form>
+        <a class="btn ghost" href="tel:+13108499898">Call (310) 849-9898</a>
+        <div class="agent">
+          <div class="av">SA</div>
+          <div><b>Saman Alishahi</b><span>Real Estate Broker · DRE #01964365<br>NMLS #2535168 · <a href="mailto:sam@alishahiinsurance.com">Email</a></span></div>
+        </div>
+      </div>
+    </aside>
   </div>
+</main>
+
+<div class="lb" id="lb" role="dialog" aria-modal="true" aria-label="Photo viewer">
+  <img alt="">
+  <button class="x" aria-label="Close">×</button>
+  <button class="prev" aria-label="Previous photo">‹</button>
+  <button class="next" aria-label="Next photo">›</button>
+  <div class="cap"></div>
 </div>
 
-<section>
-  <div class="wrap">
-    <div class="eyebrow">The home</div>
-    <h2>A classic Little Holmby traditional, with a flexible path to ownership</h2>
-    <p class="lead">Set behind manicured hedges and bougainvillea on a quiet, tree-lined street, 863 Manning Ave is a two-story traditional with four bedrooms, two full baths and a powder room, hardwood floors, two fireplaces, central air and an updated kitchen and baths. A detached guest house opens onto the lawn through French doors, and a private rear patio is made for outdoor dining. Independently appraised at <strong>$4,650,000</strong> (July 2026) and offered at <strong>$4,600,000</strong>, with the seller open to a lease option, seller carryback and other creative terms.</p>
-  </div>
-</section>
-
-<section class="fin" id="financing">
-  <div class="wrap">
-    <div class="eyebrow">Financing &amp; terms</div>
-    <h2>Buy it your way: lease option, seller financing or creative terms</h2>
-    <p class="lead" style="color:inherit;opacity:.9">Not every buyer fits a standard jumbo loan. The seller will consider structures that get the right buyer in the door.</p>
-    <div class="grid">
-      <div class="card"><h3>Lease option to buy</h3><p>Lease-to-own / rent-to-own: move in now, lock in the purchase price, and buy later. Option fee, rent credits and term negotiable.</p></div>
-      <div class="card"><h3>Seller may carry</h3><p>Seller financing / owner financing through a seller carryback note with an acceptable down payment. Rate and term negotiable.</p></div>
-      <div class="card"><h3>Lease-purchase</h3><p>A committed purchase on a set future date, with the lease period giving you time to sell, close a loan or arrange funds.</p></div>
-      <div class="card"><h3>Hybrid &amp; creative</h3><p>Conventional or jumbo first with a seller second, 1031 exchange buyers, and other creative financing proposals are welcome.</p></div>
-    </div>
-    <p class="note">All terms are subject to seller approval and a written agreement. Nothing on this page is a commitment to lend or an offer of credit. Buyers should consult their own attorney, tax and lending advisors.</p>
-  </div>
-</section>
-
-<section id="photos">
-  <div class="wrap">
-    <div class="eyebrow">Photos</div>
-    <h2>Inside and out</h2>
-    <div class="gallery">
-      <figure class="big"><img src="images/front-walk.jpg" alt="Front walk with boxwood hedges and bougainvillea at 863 Manning Ave" loading="lazy"><figcaption>Front walk</figcaption></figure>
-      <figure><img src="images/living.jpg" alt="Living room with fireplace and plantation shutters" loading="lazy"><figcaption>Living room</figcaption></figure>
-      <figure><img src="images/kitchen.jpg" alt="Updated kitchen with white cabinetry and stainless appliances" loading="lazy"><figcaption>Kitchen</figcaption></figure>
-      <figure><img src="images/dining.jpg" alt="Dining area open to living room" loading="lazy"><figcaption>Dining</figcaption></figure>
-      <figure><img src="images/rear-patio.jpg" alt="Private rear patio" loading="lazy"><figcaption>Rear patio</figcaption></figure>
-      <figure class="big"><img src="images/guest-house.jpg" alt="Detached guest house with French doors opening onto the lawn" loading="lazy"><figcaption>Guest house</figcaption></figure>
-      <figure><img src="images/bedroom.jpg" alt="Bedroom with hardwood floors" loading="lazy"><figcaption>Bedroom</figcaption></figure>
-      <figure><img src="images/bath.jpg" alt="Updated bathroom with walk-in shower" loading="lazy"><figcaption>Bath</figcaption></figure>
-      <figure><img src="images/front.jpg" alt="Front exterior and driveway" loading="lazy"><figcaption>Front exterior</figcaption></figure>
-      <figure><img src="images/street.jpg" alt="Tree-lined Manning Ave" loading="lazy"><figcaption>Manning Ave</figcaption></figure>
-    </div>
-  </div>
-</section>
-<div class="lightbox" id="lb" role="dialog" aria-label="Photo viewer"><img alt=""></div>
-
-<section id="details">
-  <div class="wrap two">
-    <div>
-      <div class="eyebrow">Property details</div>
-      <h2>At a glance</h2>
-      <table class="spec">
-        <tr><td>Price</td><td>$4,600,000</td></tr>
-        <tr><td>Address</td><td>863 Manning Ave, Los Angeles, CA 90024</td></tr>
-        <tr><td>Neighborhood</td><td>Little Holmby / Westwood</td></tr>
-        <tr><td>Type</td><td>Single-family, detached, 2 stories</td></tr>
-        <tr><td>Bedrooms / Baths</td><td>4 / 2 full + 1 half</td></tr>
-        <tr><td>Living area</td><td>±2,849 sq ft</td></tr>
-        <tr><td>Lot</td><td>±9,744 sq ft, rectangular</td></tr>
-        <tr><td>Zoning</td><td>R1 (single-family)</td></tr>
-        <tr><td>Year built</td><td>1949</td></tr>
-        <tr><td>APN</td><td>4360-008-022</td></tr>
-        <tr><td>Parking</td><td>Attached carport + 2-car driveway</td></tr>
-        <tr><td>HOA</td><td>None</td></tr>
-      </table>
-    </div>
-    <div>
-      <div class="eyebrow">Features</div>
-      <h2>What you get</h2>
-      <ul class="check">
-        <li>Detached guest house with French doors</li>
-        <li>Two fireplaces</li>
-        <li>Central forced-air heat and central A/C</li>
-        <li>Hardwood floors, plaster walls</li>
-        <li>Updated kitchen and bathrooms</li>
-        <li>Tankless water heater</li>
-        <li>Open rear patio and covered front porch</li>
-        <li>Perimeter fencing and mature landscaping</li>
-        <li>Outside FEMA flood hazard area (Zone X)</li>
-        <li>Minutes to UCLA, Westwood Village, Century City and Beverly Hills</li>
-      </ul>
-    </div>
-  </div>
-</section>
-
-<section id="faq" style="padding-top:0">
-  <div class="wrap">
-    <div class="eyebrow">FAQ</div>
-    <h2>Common questions</h2>
-    <details><summary>Is a lease option or rent-to-own available?</summary><p>Yes. The seller will consider a lease option to buy (lease-to-own / rent-to-own) or a lease-purchase. Option fee, monthly rent, rent credits and term are negotiable.</p></details>
-    <details><summary>Will the seller carry financing?</summary><p>The seller may carry. Seller financing / owner financing via a seller carryback note will be considered with an acceptable down payment.</p></details>
-    <details><summary>What other creative financing is considered?</summary><p>A conventional or jumbo first loan with a seller second, 1031 exchange buyers, and other structures proposed by qualified buyers.</p></details>
-    <details><summary>Can I see the home?</summary><p>Yes. The home is vacant and available now, so showings are easy to schedule. Use the form below or call (310) 849-9898.</p></details>
-    <details><summary>Where exactly is Little Holmby?</summary><p>Little Holmby is a residential pocket of Westwood bounded by Sunset Blvd to the north, Beverly Glen Blvd to the east, Santa Monica Blvd to the south and the 405 to the west.</p></details>
-    <details><summary>Are there rent-to-own homes in Westwood or near UCLA?</summary><p>Yes. 863 Manning Ave in Little Holmby, Westwood (Los Angeles 90024), about one mile from UCLA, is offered at $4,600,000 with a lease option to buy (rent-to-own) available.</p></details>
-    <details><summary>Are there homes with seller financing or owner financing in Los Angeles?</summary><p>Yes. 863 Manning Ave, Los Angeles, CA 90024 (Westwood / Little Holmby) is a 4-bedroom home with a guest house offered at $4,600,000 where the seller may carry financing (owner financing / seller carryback).</p></details>
-    <details><summary>Who is the listing agent for 863 Manning Ave?</summary><p>Saman Alishahi, California Real Estate Broker, DRE #01964365, NMLS #2535168. Phone (310) 849-9898, email sam@alishahiinsurance.com.</p></details>
-    <details><summary>Does 863 Manning Ave have a guest house?</summary><p>Yes. The property includes a detached guest house with French doors opening onto the lawn, in addition to the 4-bedroom, 2.5-bath main house.</p></details>
-  </div>
-</section>
-
-<section class="contact" id="contact">
-  <div class="wrap two">
-    <div>
-      <div class="eyebrow">Inquire</div>
-      <h2>Request a showing or propose terms</h2>
-      <p class="lead">Tell us how you'd like to buy: cash, conventional, lease option or seller-carry. We'll respond within one business day.</p>
-      <p><strong>Saman Alishahi</strong><br>Real Estate Broker · DRE #01964365 · NMLS #2535168<br><a href="tel:+13108499898">(310) 849-9898</a> · <a href="mailto:sam@alishahiinsurance.com">sam@alishahiinsurance.com</a></p>
-    </div>
-    <form action="mailto:sam@alishahiinsurance.com" method="post" enctype="text/plain">
-      <input name="name" placeholder="Full name" required autocomplete="name">
-      <input name="email" type="email" placeholder="Email" required autocomplete="email">
-      <input name="phone" type="tel" placeholder="Phone" autocomplete="tel">
-      <select name="interest">
-        <option>Lease option to buy</option>
-        <option>Seller financing / seller carry</option>
-        <option>Conventional or jumbo purchase</option>
-        <option>Cash purchase</option>
-        <option>Other creative financing</option>
-      </select>
-      <textarea name="message" rows="4" placeholder="Proposed terms, timing or questions"></textarea>
-      <button type="submit">Send inquiry</button>
-    </form>
-  </div>
-</section>
+<div class="fab">
+  <a class="c" href="tel:+13108499898" aria-label="Call (310) 849-9898"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6.6 10.8a15.1 15.1 0 0 0 6.6 6.6l2.2-2.2a1 1 0 0 1 1-.25 11.4 11.4 0 0 0 3.6.57 1 1 0 0 1 1 1V20a1 1 0 0 1-1 1A17 17 0 0 1 3 4a1 1 0 0 1 1-1h3.5a1 1 0 0 1 1 1c0 1.25.2 2.45.57 3.57a1 1 0 0 1-.25 1z"/></svg>Call</a>
+  <a class="t" href="sms:+13108499898?&amp;body=Hi%20Saman%2C%20I%27m%20interested%20in%20863%20Manning%20Ave." aria-label="Text (310) 849-9898"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 3h16a2 2 0 0 1 2 2v11a2 2 0 0 1-2 2H8l-4 4V5a2 2 0 0 1 2-2zm3 6v2h10V9zm0 4v2h7v-2z"/></svg>Text</a>
+</div>
 
 <footer>
   <div class="wrap">
-    863 Manning Ave, Los Angeles, CA 90024 · Little Holmby / Westwood · Offered at $4,600,000 · Lease option, seller financing and creative financing considered.<br>
-    Property information is from public records and a July 2026 appraisal, is deemed reliable but not guaranteed, and should be independently verified. Square footage and lot size are approximate. Terms subject to change and seller approval. Listed by Saman Alishahi, Real Estate Broker, CA DRE #01964365, NMLS #2535168. Equal Housing Opportunity.
+    <p>863 Manning Ave, Los Angeles, CA 90024 · Little Holmby / Westwood · Offered at $4,600,000 · Lease option, seller financing and creative financing considered.</p>
+    <p>Listed by Saman Alishahi, Real Estate Broker, CA DRE #01964365, NMLS #2535168 · (310) 849-9898 · <a href="mailto:sam@alishahiinsurance.com">sam@alishahiinsurance.com</a></p>
+    <p>Property information is from public records and a July 2026 appraisal, is deemed reliable but not guaranteed, and should be independently verified. Square footage and lot size are approximate. Terms subject to change and seller approval. Equal Housing Opportunity.</p>
   </div>
 </footer>
 
 <script>
-const lb=document.getElementById('lb'),lbi=lb.querySelector('img');
-document.querySelectorAll('.gallery figure').forEach(f=>f.addEventListener('click',()=>{const i=f.querySelector('img');lbi.src=i.src;lbi.alt=i.alt;lb.classList.add('open')}));
-lb.addEventListener('click',()=>lb.classList.remove('open'));
-document.addEventListener('keydown',e=>{if(e.key==='Escape')lb.classList.remove('open')});
+const photos=[
+ ["front.jpg","Front exterior"],["front-walk.jpg","Front walk"],["living.jpg","Living room"],["kitchen.jpg","Kitchen"],
+ ["dining.jpg","Dining"],["rear-patio.jpg","Rear patio"],["guest-house.jpg","Guest house"],["bedroom.jpg","Bedroom"],
+ ["bath.jpg","Bathroom"],["street.jpg","Manning Ave"]];
+const lb=document.getElementById('lb'),img=lb.querySelector('img'),cap=lb.querySelector('.cap');let cur=0;
+function show(i){cur=(i+photos.length)%photos.length;img.src='images/'+photos[cur][0];img.alt=photos[cur][1];cap.textContent=photos[cur][1]+'  ·  '+(cur+1)+' / '+photos.length;lb.classList.add('open')}
+document.querySelectorAll('.mosaic [data-i]').forEach(b=>b.addEventListener('click',()=>show(+b.dataset.i)));
+lb.querySelector('.x').onclick=()=>lb.classList.remove('open');
+lb.querySelector('.prev').onclick=e=>{e.stopPropagation();show(cur-1)};
+lb.querySelector('.next').onclick=e=>{e.stopPropagation();show(cur+1)};
+lb.addEventListener('click',e=>{if(e.target===lb)lb.classList.remove('open')});
+document.addEventListener('keydown',e=>{if(!lb.classList.contains('open'))return;if(e.key==='Escape')lb.classList.remove('open');if(e.key==='ArrowLeft')show(cur-1);if(e.key==='ArrowRight')show(cur+1)});
 </script>
 </body>
 </html>
