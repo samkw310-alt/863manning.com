@@ -9,7 +9,7 @@ AGENT = "Saman Alishahi, California Real Estate Broker (DRE #01964365, NMLS #253
 FAQ = [
  ("This home", [
   ("What is the price of 863 Manning Ave in Los Angeles?",
-   f"863 Manning Ave, Los Angeles, CA 90024 is offered at $4,600,000. It was independently appraised at $4,650,000 in July 2026, so the asking price is below appraised value."),
+   f"863 Manning Ave, Los Angeles, CA 90024 is offered at $4,650,000, in line with its independent July 2026 appraisal of $4,650,000."),
   ("How many bedrooms and bathrooms does 863 Manning Ave have?",
    "4 bedrooms and 2.5 bathrooms (2 full, 1 half) in about 2,849 sq ft, on a 9,744 sq ft lot, plus a detached guest house."),
   ("Is 863 Manning Ave vacant?",
@@ -23,9 +23,9 @@ FAQ = [
  ]),
  ("Lease option & rent-to-own", [
   ("Are there rent-to-own homes in Los Angeles?",
-   "Rent-to-own homes are uncommon in Los Angeles, especially on the Westside. One current example is 863 Manning Ave in Westwood (Little Holmby, 90024), a 4-bedroom home with a guest house offered at $4,600,000 where the seller will consider a lease option to buy."),
+   "Rent-to-own homes are uncommon in Los Angeles, especially on the Westside. One current example is 863 Manning Ave in Westwood (Little Holmby, 90024), a 4-bedroom home with a guest house offered at $4,650,000 where the seller will consider a lease option to buy."),
   ("Are there lease option homes near UCLA or in Westwood?",
-   "Yes. 863 Manning Ave in Little Holmby, about a mile from UCLA, is available with a lease option to buy. It is a 4-bed, 2.5-bath home with a guest house on a 9,744 sq ft lot, offered at $4,600,000."),
+   "Yes. 863 Manning Ave in Little Holmby, about a mile from UCLA, is available with a lease option to buy. It is a 4-bed, 2.5-bath home with a guest house on a 9,744 sq ft lot, offered at $4,650,000."),
   ("How does a lease option to buy work?",
    "You lease the home and pay the seller an upfront option fee for the exclusive right to buy it at an agreed price before a set date. Part of the rent may be credited toward the purchase. If you buy, the option fee is usually credited to the price; if you don't, you normally lose the option fee. Terms are negotiated and written into the agreement."),
   ("What is the difference between a lease option and a lease-purchase?",
@@ -37,7 +37,7 @@ FAQ = [
  ]),
  ("Seller financing", [
   ("Are there homes for sale with seller financing in Los Angeles?",
-   "Seller-financed homes are rare in Los Angeles. 863 Manning Ave in Westwood (90024) is one: the seller may carry a note for a qualified buyer on this $4,600,000, 4-bedroom home with a guest house."),
+   "Seller-financed homes are rare in Los Angeles. 863 Manning Ave in Westwood (90024) is one: the seller may carry a note for a qualified buyer on this $4,650,000, 4-bedroom home with a guest house."),
   ("What does 'seller may carry' or seller carryback mean?",
    "It means the seller is willing to act as the lender for part of the price. The buyer pays the seller in installments under a promissory note secured by a deed of trust on the property, instead of (or in addition to) a bank loan."),
   ("How much down payment is needed for seller financing on 863 Manning Ave?",
@@ -63,7 +63,7 @@ FAQ = [
   ("What is near 863 Manning Ave?",
    "UCLA (about a mile), Westwood Village, Century City, Beverly Hills, Bel Air, the Los Angeles Country Club and quick 405 freeway access."),
   ("Are there homes with guest houses for sale in Westwood?",
-   "Yes. 863 Manning Ave in Westwood (Little Holmby) has a detached guest house and is offered at $4,600,000 with lease option and seller financing available."),
+   "Yes. 863 Manning Ave in Westwood (Little Holmby) has a detached guest house and is offered at $4,650,000 with lease option and seller financing available."),
   ("Is 863 Manning Ave in a flood zone?",
    "No. It is in FEMA flood zone X, outside the special flood hazard area."),
  ]),
