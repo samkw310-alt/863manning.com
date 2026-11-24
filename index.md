@@ -2,7 +2,7 @@
 
 **Vacant, available now · Lease option to buy · Rent-to-own · Seller may carry · Owner financing · Creative financing considered**
 
-Little Holmby, Westwood, Los Angeles. Listed by Saman Alishahi, California Real Estate Broker, DRE #01964365, NMLS #2535168. (424) 552-4545 · sam@alishahiinsurance.com
+Little Holmby, Westwood, Los Angeles. Listed by Saman Alishahi, California Real Estate Broker, DRE #01964365, NMLS #2535168. (310) 849-9898 · sam@alishahiinsurance.com
 
 ![Front of 863 Manning Ave](https://863manning.com/images/front.jpg)
 
@@ -54,7 +54,7 @@ All terms subject to seller approval.
 
 ## Showings
 
-The home is vacant and available now, with immediate move-in possible (including on a lease option). Showings by appointment. Contact Saman Alishahi at (424) 552-4545 or sam@alishahiinsurance.com.
+The home is vacant and available now, with immediate move-in possible (including on a lease option). Showings by appointment. Contact Saman Alishahi at (310) 849-9898 or sam@alishahiinsurance.com.
 
 Information from public records and a July 2026 appraisal; deemed reliable but not guaranteed. Equal Housing Opportunity.
 
