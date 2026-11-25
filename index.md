@@ -60,6 +60,10 @@ Information from public records and a July 2026 appraisal; deemed reliable but n
 
 Full listing: https://863manning.com/
 
+## Video tour
+
+A 2 minute 15 second video tour is at https://863manning.com/#video (file: https://863manning.com/video/863-manning-tour.mp4). Scenes labeled "Virtually Staged" were digitally altered using AI to add furniture and decor; original photos are at https://863manning.com/originals.html.
+
 ## Photos
 
 The listing page shows 51 photos at https://863manning.com/#photos. 34 interior and patio photos are virtually staged: they were digitally altered using AI to add furniture and decor to the vacant home. Walls, floors, fixtures, windows and views were not changed. The original, unaltered photos are at https://863manning.com/originals.html (Cal. Bus. & Prof. Code §10140.8).
