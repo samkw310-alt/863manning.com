@@ -60,6 +60,12 @@ Information from public records and a July 2026 appraisal; deemed reliable but n
 
 Full listing: https://863manning.com/
 
+## Buyer guides
+- Little Holmby homes for sale: https://863manning.com/little-holmby-homes-for-sale/
+- How a lease option works in Los Angeles: https://863manning.com/lease-option-los-angeles/
+- Seller financing on a Westwood home: https://863manning.com/seller-financing-westwood/
+- Westwood home with a guest house: https://863manning.com/westwood-home-with-guest-house/
+
 ## Video tour
 
 A 2 minute 9 second video tour is at https://863manning.com/#video (file: https://863manning.com/video/863-manning-tour.mp4). Scenes labeled "Virtually Staged" were digitally altered using AI to add furniture and decor; original photos are at https://863manning.com/originals.html.
