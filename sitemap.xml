@@ -1,10 +1,70 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:image="http://www.google.com/schemas/sitemap-image/1.1" xmlns:video="http://www.google.com/schemas/sitemap-video/1.1">
   <url>
     <loc>https://863manning.com/</loc>
-    <lastmod>2026-11-24</lastmod>
+    <lastmod>2026-11-26</lastmod>
     <image:image><image:loc>https://863manning.com/images/863-manning-ave-front.jpg</image:loc></image:image>
+    <image:image><image:loc>https://863manning.com/images/photos/01-Front-Exterior.jpg</image:loc></image:image>
+    <image:image><image:loc>https://863manning.com/images/photos/02-Living-Room.jpg</image:loc></image:image>
+    <image:image><image:loc>https://863manning.com/images/photos/03-Living-Room-Fireplace.jpg</image:loc></image:image>
+    <image:image><image:loc>https://863manning.com/images/photos/04-Dining-Room.jpg</image:loc></image:image>
+    <image:image><image:loc>https://863manning.com/images/photos/05-Dining-Room-Reverse.jpg</image:loc></image:image>
+    <image:image><image:loc>https://863manning.com/images/photos/06-Living-and-Dining.jpg</image:loc></image:image>
+    <image:image><image:loc>https://863manning.com/images/photos/07-Open-Living-and-Bar.jpg</image:loc></image:image>
+    <image:image><image:loc>https://863manning.com/images/photos/08-Kitchen-and-Nook.jpg</image:loc></image:image>
+    <image:image><image:loc>https://863manning.com/images/photos/09-Kitchen-and-Dining.jpg</image:loc></image:image>
+    <image:image><image:loc>https://863manning.com/images/photos/10-Galley-Kitchen.jpg</image:loc></image:image>
+    <image:image><image:loc>https://863manning.com/images/photos/11-Living-Room-Window.jpg</image:loc></image:image>
+    <image:image><image:loc>https://863manning.com/images/photos/12-Kitchen-Sink-and-Range.jpg</image:loc></image:image>
+    <image:image><image:loc>https://863manning.com/images/photos/13-Breakfast-Nook.jpg</image:loc></image:image>
+    <image:image><image:loc>https://863manning.com/images/photos/14-Family-Room-Fireplace.jpg</image:loc></image:image>
+    <image:image><image:loc>https://863manning.com/images/photos/15-Family-Room-and-Entry.jpg</image:loc></image:image>
+    <image:image><image:loc>https://863manning.com/images/photos/16-Family-Room.jpg</image:loc></image:image>
+    <image:image><image:loc>https://863manning.com/images/photos/17-Family-Room-Reverse.jpg</image:loc></image:image>
+    <image:image><image:loc>https://863manning.com/images/photos/18-Hallway.jpg</image:loc></image:image>
+    <image:image><image:loc>https://863manning.com/images/photos/19-Primary-Bedroom.jpg</image:loc></image:image>
+    <image:image><image:loc>https://863manning.com/images/photos/20-Primary-Bedroom-Reverse.jpg</image:loc></image:image>
+    <image:image><image:loc>https://863manning.com/images/photos/21-Primary-Bathroom.jpg</image:loc></image:image>
+    <image:image><image:loc>https://863manning.com/images/photos/22-Tub-and-Shower.jpg</image:loc></image:image>
+    <image:image><image:loc>https://863manning.com/images/photos/23-Bathroom-Vanity.jpg</image:loc></image:image>
+    <image:image><image:loc>https://863manning.com/images/photos/24-Shower-and-Tub.jpg</image:loc></image:image>
+    <image:image><image:loc>https://863manning.com/images/photos/25-Foyer-and-Bar.jpg</image:loc></image:image>
+    <image:image><image:loc>https://863manning.com/images/photos/26-Powder-Room.jpg</image:loc></image:image>
+    <image:image><image:loc>https://863manning.com/images/photos/27-Wood-Staircase.jpg</image:loc></image:image>
+    <image:image><image:loc>https://863manning.com/images/photos/28-Loft-Lounge.jpg</image:loc></image:image>
+    <image:image><image:loc>https://863manning.com/images/photos/29-Loft-Office.jpg</image:loc></image:image>
+    <image:image><image:loc>https://863manning.com/images/photos/30-Attic-Nook.jpg</image:loc></image:image>
+    <image:image><image:loc>https://863manning.com/images/photos/31-Loft-and-Railing.jpg</image:loc></image:image>
+    <image:image><image:loc>https://863manning.com/images/photos/32-Courtyard-and-Garden.jpg</image:loc></image:image>
+    <image:image><image:loc>https://863manning.com/images/photos/33-Courtyard-French-Doors.jpg</image:loc></image:image>
+    <image:image><image:loc>https://863manning.com/images/photos/34-Courtyard-and-House.jpg</image:loc></image:image>
+    <image:image><image:loc>https://863manning.com/images/photos/35-Backyard-and-Guest-House.jpg</image:loc></image:image>
+    <image:image><image:loc>https://863manning.com/images/photos/36-Guest-House-Exterior.jpg</image:loc></image:image>
+    <image:image><image:loc>https://863manning.com/images/photos/37-Courtyard-Dining.jpg</image:loc></image:image>
+    <image:image><image:loc>https://863manning.com/images/photos/38-Front-Entry.jpg</image:loc></image:image>
+    <image:image><image:loc>https://863manning.com/images/photos/39-Front-Gate.jpg</image:loc></image:image>
+    <image:image><image:loc>https://863manning.com/images/photos/40-Carport.jpg</image:loc></image:image>
+    <image:image><image:loc>https://863manning.com/images/photos/41-Front-and-Driveway.jpg</image:loc></image:image>
+    <image:image><image:loc>https://863manning.com/images/photos/42-Front-Approach.jpg</image:loc></image:image>
+    <image:image><image:loc>https://863manning.com/images/photos/43-Front-Lawn.jpg</image:loc></image:image>
+    <image:image><image:loc>https://863manning.com/images/photos/44-Aerial-Overhead.jpg</image:loc></image:image>
+    <image:image><image:loc>https://863manning.com/images/photos/45-Aerial-Front.jpg</image:loc></image:image>
+    <image:image><image:loc>https://863manning.com/images/photos/46-Neighborhood-Skyline.jpg</image:loc></image:image>
+    <image:image><image:loc>https://863manning.com/images/photos/47-Aerial-Street.jpg</image:loc></image:image>
+    <image:image><image:loc>https://863manning.com/images/photos/48-Aerial-Courtyard.jpg</image:loc></image:image>
+    <image:image><image:loc>https://863manning.com/images/photos/49-Neighborhood-View.jpg</image:loc></image:image>
+    <image:image><image:loc>https://863manning.com/images/photos/50-Aerial-Rear.jpg</image:loc></image:image>
+    <image:image><image:loc>https://863manning.com/images/photos/51-Neighborhood-Panorama.jpg</image:loc></image:image>
+    <video:video>
+      <video:thumbnail_loc>https://863manning.com/images/photos/01-Front-Exterior.jpg</video:thumbnail_loc>
+      <video:title>863 Manning Ave, Los Angeles 90024 – Video Tour</video:title>
+      <video:description>Video tour of 863 Manning Ave, a 4 bed, 2.5 bath single-story home with a mezzanine and detached guest house in Little Holmby (Westwood), Los Angeles, offered at $4,650,000. Scenes labeled Virtually Staged were digitally altered using AI to add furniture and decor.</video:description>
+      <video:content_loc>https://863manning.com/video/863-manning-tour.mp4</video:content_loc>
+      <video:duration>129</video:duration>
+      <video:publication_date>2026-11-24T21:32:00-08:00</video:publication_date>
+      <video:family_friendly>yes</video:family_friendly>
+    </video:video>
   </url>
-  <url><loc>https://863manning.com/llms.txt</loc><lastmod>2026-11-24</lastmod></url>
-  <url><loc>https://863manning.com/index.md</loc><lastmod>2026-11-24</lastmod></url>
+  <url><loc>https://863manning.com/llms.txt</loc><lastmod>2026-11-26</lastmod></url>
+  <url><loc>https://863manning.com/index.md</loc><lastmod>2026-11-26</lastmod></url>
 </urlset>
