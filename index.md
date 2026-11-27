@@ -68,7 +68,7 @@ Full listing: https://863manning.com/
 
 ## Video tour
 
-A 2 minute 9 second video tour is at https://863manning.com/#video (file: https://863manning.com/video/863-manning-tour.mp4). Scenes labeled "Virtually Staged" were digitally altered using AI to add furniture and decor; original photos are at https://863manning.com/originals.html.
+A 2 minute 9 second video tour is at https://863manning.com/#video (file: https://863manning.com/video/863-manning-tour.mp4; also on YouTube: https://www.youtube.com/watch?v=TgpBa50qg_0). Scenes labeled "Virtually Staged" were digitally altered using AI to add furniture and decor; original photos are at https://863manning.com/originals.html.
 
 ## Photos
 
